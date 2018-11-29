@@ -121,6 +121,25 @@
 				size: gridUnit*2 // 1m=1unit
 			}
 
+			window.animate = function() {
+				// blank canvas
+				context.fillStyle = "#fff";
+				context.fillRect(0, 0, wh, wh);
+
+				// increment for the iteration
+				projectile.angle += speed;
+				projectile.x = center + Math.cos(projectile.angle)*radius,
+				projectile.y = center + Math.sin(projectile.angle)*radius,
+
+				// draw frame
+				drawLine(center, center, projectile.x, projectile.y);
+				drawCircle(center, center, gridUnit/2, "#ccc");
+				drawCircle(projectile.x, projectile.y, gridUnit, projectile.size, "#303f9f");
+
+				setTimeout(animate, 10);
+			};
+
+			requestAnimationFrame(animate);
 
 			// sample canvas interactions:
 			/*var canvas1 = $("#canvas1")[0];
