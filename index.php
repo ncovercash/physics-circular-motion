@@ -66,7 +66,7 @@
 			<div id="sec1" class="section">
 				<div class="row">
 					<div class="col s12 m7 l8">
-						<canvas class="col s12" id="canvas" style="border: 1px solid black; border-radius: 0.4em;"></canvas>
+						<canvas id="canvas" style="border: 1px solid black; border-radius: 0.4em;"></canvas>
 					</div>
 					<div class="col s12 m5 l4">
 						<label for="range">Range label</label>
