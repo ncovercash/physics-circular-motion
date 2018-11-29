@@ -112,6 +112,15 @@
 				context.stroke();
 			}
 
+			window.radius = 6*gridUnit; // 1m=1unit
+			window.speed = 2*Math.PI/300; // rad/0.01 sec
+			window.projectile = {
+				x: center + radius*gridUnit, // px
+				y: 0,
+				angle: 0, // radians
+				size: gridUnit*2 // 1m=1unit
+			}
+
 
 			// sample canvas interactions:
 			/*var canvas1 = $("#canvas1")[0];
