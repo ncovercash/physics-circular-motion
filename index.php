@@ -84,12 +84,12 @@
 		$(function(){
 			window.canvas = $("#canvas");
 
-			// calculate proper dimensions and center
-			var wh = window.canvas.parent().width();
-			var center = wh/2;
+			// calculate proper dimensions (must be even) and center
+			window.wh = Math.floor(window.canvas.parent().width()/24)*24;
+			window.center = wh/2;
 
 			// used for pretty aligning with different screen sizes
-			var gridUnit = wh/24;
+			window.gridUnit = wh/24;
 
 			window.context = canvas.get(0).getContext("2d");
 			context.canvas.width = wh;
