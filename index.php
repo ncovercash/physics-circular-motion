@@ -105,7 +105,13 @@
 				context.stroke();
 			};
 
-			drawCircle(center,center,gridUnit/2, "#ccc");
+			window.drawLine = function(x1, y1, x2, y2) {
+				context.beginPath();
+				context.moveTo(x1,y1);
+				context.lineTo(x2,y2);
+				context.stroke();
+			}
+
 
 			// sample canvas interactions:
 			/*var canvas1 = $("#canvas1")[0];
