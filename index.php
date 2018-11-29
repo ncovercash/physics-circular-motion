@@ -92,6 +92,16 @@
 			context.canvas.width = wh;
 			context.canvas.height = wh;
 			
+			window.drawCircle = function(x, y, r, fill="#4caf50") {
+				context.beginPath();
+				context.arc(x, y, r, 0, 2 * Math.PI, false);
+				context.fillStyle = fill;
+				context.fill();
+				context.lineWidth = 1;
+				context.strokeStyle = '#333';
+				context.stroke();
+			};
+
 
 			// sample canvas interactions:
 			/*var canvas1 = $("#canvas1")[0];
