@@ -84,8 +84,14 @@
 		$(function(){
 			window.canvas = $("#canvas");
 
-			// set the canvas height to its width for a nice square
-			canvas.height(canvas.width());
+			// calculate proper dimensions and center
+			var wh = window.canvas.parent().width();
+			var center = wh/2;
+
+			window.context = canvas.get(0).getContext("2d");
+			context.canvas.width = wh;
+			context.canvas.height = wh;
+			
 
 			// sample canvas interactions:
 			/*var canvas1 = $("#canvas1")[0];
