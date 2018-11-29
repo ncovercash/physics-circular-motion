@@ -105,6 +105,7 @@
 				context.stroke();
 			};
 
+			drawCircle(center,center,gridUnit/2, "#ccc");
 
 			// sample canvas interactions:
 			/*var canvas1 = $("#canvas1")[0];
