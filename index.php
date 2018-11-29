@@ -82,7 +82,7 @@
 <script type="text/javascript">
 	(function($){
 		$(function(){
-			var canvas = $("#canvas");
+			window.canvas = $("#canvas");
 
 			// set the canvas height to its width for a nice square
 			canvas.height(canvas.width());
