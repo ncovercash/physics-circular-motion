@@ -88,6 +88,9 @@
 			var wh = window.canvas.parent().width();
 			var center = wh/2;
 
+			// used for pretty aligning with different screen sizes
+			var gridUnit = wh/24;
+
 			window.context = canvas.get(0).getContext("2d");
 			context.canvas.width = wh;
 			context.canvas.height = wh;
