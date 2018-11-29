@@ -82,6 +82,11 @@
 <script type="text/javascript">
 	(function($){
 		$(function(){
+			var canvas = $("#canvas");
+
+			// set the canvas height to its width for a nice square
+			canvas.height(canvas.width());
+
 			// sample canvas interactions:
 			/*var canvas1 = $("#canvas1")[0];
 			var context1 = canvas1.getContext('2d');
