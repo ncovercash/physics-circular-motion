@@ -165,6 +165,10 @@
 				context.fillStyle = "#fff";
 				context.fillRect(0, 0, wh, wh);
 
+				// fill in parameters
+				radius = $("#radius").val()*gridUnit;
+				projectile.size = $("#mass").val()*gridUnit*0.25;
+
 				// fill in measurements
 				$("#radius-val").text(""+prettyNumber(radius/gridUnit)+" m");
 				$("#mass-val").text(""+prettyNumber(4*projectile.size/gridUnit)+" kg");
