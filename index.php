@@ -133,7 +133,11 @@
 				context.moveTo(x1,y1);
 				context.lineTo(x2,y2);
 				context.stroke();
-			}
+			};
+
+			window.prettyNumber = function(n) {
+				return Math.round(n*10000)/10000;
+			};
 
 			window.radius = 6*gridUnit; // 1m=1unit
 			window.speed = 2*Math.PI/300; // rad/0.01 sec
