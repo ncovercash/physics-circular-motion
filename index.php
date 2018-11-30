@@ -145,8 +145,8 @@
 				x: center + radius*gridUnit, // px
 				y: 0,
 				angle: 0, // radians
-				size: gridUnit*2 // 1m=1unit
-			}
+				size: 5*0.25*gridUnit // 1kg=0.25unit
+			};
 
 			window.animate = function() {
 				// blank canvas
