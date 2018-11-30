@@ -165,6 +165,16 @@
 				context.fillStyle = "#fff";
 				context.fillRect(0, 0, wh, wh);
 
+				// fill in measurements
+				$("#radius-val").text(""+prettyNumber(radius/gridUnit)+" m");
+				$("#mass-val").text(""+prettyNumber(4*projectile.size/gridUnit)+" kg");
+				$("#angular-speed-val").text(""+prettyNumber(speed*100/Math.PI)+"π rad/s");
+				$("#angular-speed-rps-val").text(""+prettyNumber(speed*100/(2*Math.PI))+" rev/s");
+				var velocity = speed*100*(radius/gridUnit);
+				$("#velocity-val").text(""+prettyNumber(velocity)+" m/s");
+				$("#acceleration-val").text(""+prettyNumber(velocity*velocity/(radius/gridUnit))+" m/s²");
+				$("#force-val").text(""+prettyNumber((4*projectile.size/gridUnit)*velocity*velocity/(radius/gridUnit))+" N");
+
 				// increment for the iteration
 				projectile.angle += speed;
 				projectile.x = center + Math.cos(projectile.angle)*radius,
@@ -173,7 +183,7 @@
 				// draw frame
 				drawLine(center, center, projectile.x, projectile.y);
 				drawCircle(center, center, gridUnit/2, "#ccc");
-				drawCircle(projectile.x, projectile.y, gridUnit, projectile.size, "#303f9f");
+				drawCircle(projectile.x, projectile.y, projectile.size, "#303f9f");
 
 				setTimeout(animate, 10);
 			};
