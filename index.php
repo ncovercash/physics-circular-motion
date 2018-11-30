@@ -108,6 +108,18 @@
 						<p class="range-field">
 							<input type="range" id="mass" min="0.2" max="25" step="0.1" value="5" />
 						</p>
+						<div class="switch">
+							<label>
+								Angular Speed
+								<input type="checkbox" id="w-or-v">
+								<span class="lever"></span>
+								Velocity
+							</label>
+						</div>
+						<label for="w-or-v-val">Angular Speed (rev/s)</label>
+						<p class="range-field">
+							<input type="range" id="w-or-v-val" min="0.05" max="3" step="0.05" value="0.6" />
+						</p>
 						<div class="divider"></div>
 						<div class="code-block">
 							<p>Measurements:</p>
