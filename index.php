@@ -197,7 +197,7 @@
 				if ($("#w-or-v").is(":checked")) {
 					// velocity
 					if (lastSpeedSetting == "V") {
-						speed = document.getElementById("#w-or-v-val").value/100*gridUnit/radius;
+						speed = document.getElementById("w-or-v-val").value/100*gridUnit/radius;
 					} else {
 						$("label[for=w-or-v-val]").text("Velocity (m/s)");
 						$("#w-or-v-val").attr("min", 0.1).attr("max", 220).attr("step", 0.1).val(Math.round(10*speed*100*(radius/gridUnit))/10);
