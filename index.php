@@ -67,9 +67,13 @@
 						<canvas id="canvas" style="border: 1px solid black; border-radius: 0.4em;"></canvas>
 					</div>
 					<div class="col s12 m5 l4">
-						<label for="range">Range label</label>
+						<label for="radius">Radius (m)</label>
 						<p class="range-field">
-							<input type="range" id="range" min="0" max="10" step="0.01" value="0" />
+							<input type="range" id="radius" min="0.1" max="12" step="0.1" value="6" />
+						</p>
+						<label for="mass">Mass (kg)</label>
+						<p class="range-field">
+							<input type="range" id="mass" min="0.2" max="25" step="0.1" value="5" />
 						</p>
 					</div>
 				</div>
