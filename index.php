@@ -190,18 +190,18 @@
 				context.fillRect(0, 0, wh, wh);
 
 				// fill in parameters
-				radius = $("#radius").val()*gridUnit;
-				projectile.size = $("#mass").val()*gridUnit*0.25;
+				radius = document.getElementById("radius").value*gridUnit;
+				projectile.size = document.getElementById("mass").value*gridUnit*0.25;
 
 				// fill in measurements
-				$("#radius-val").text(""+prettyNumber(radius/gridUnit)+" m");
-				$("#mass-val").text(""+prettyNumber(4*projectile.size/gridUnit)+" kg");
-				$("#angular-speed-val").text(""+prettyNumber(speed*100/Math.PI)+"π rad/s");
-				$("#angular-speed-rps-val").text(""+prettyNumber(speed*100/(2*Math.PI))+" rev/s");
+				document.getElementById("radius-val").innerHtml = ""+prettyNumber(radius/gridUnit)+" m";
+				document.getElementById("mass-val").innerHtml = ""+prettyNumber(4*projectile.size/gridUnit)+" kg";
+				document.getElementById("angular-speed-val").innerHtml = ""+prettyNumber(speed*100/Math.PI)+"π rad/s";
+				document.getElementById("angular-speed-rps-val").innerHtml = ""+prettyNumber(speed*100/(2*Math.PI))+" rev/s";
 				var velocity = speed*100*(radius/gridUnit);
-				$("#velocity-val").text(""+prettyNumber(velocity)+" m/s");
-				$("#acceleration-val").text(""+prettyNumber(velocity*velocity/(radius/gridUnit))+" m/s²");
-				$("#force-val").text(""+prettyNumber((4*projectile.size/gridUnit)*velocity*velocity/(radius/gridUnit))+" N");
+				document.getElementById("velocity-val").innerHtml = ""+prettyNumber(velocity)+" m/s";
+				document.getElementById("acceleration-val").innerHtml = ""+prettyNumber(velocity*velocity/(radius/gridUnit))+" m/s²";
+				document.getElementById("force-val").innerHtml = ""+prettyNumber((4*projectile.size/gridUnit)*velocity*velocity/(radius/gridUnit))+" N";
 
 				// increment for the iteration
 				projectile.angle += speed;
