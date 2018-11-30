@@ -184,6 +184,8 @@
 				size: 5*0.25*gridUnit // 1kg=0.25unit
 			};
 
+			window.lastSpeedSetting = "W";
+
 			window.animate = function() {
 				// blank canvas
 				context.fillStyle = "#fff";
@@ -192,6 +194,25 @@
 				// fill in parameters
 				radius = document.getElementById("radius").value*gridUnit;
 				projectile.size = document.getElementById("mass").value*gridUnit*0.25;
+				if ($("#w-or-v").is(":checked")) {
+					// velocity
+					if (lastSpeedSetting == "V") {
+						speed = document.getElementById("#w-or-v-val").value/100*gridUnit/radius;
+					} else {
+						$("label[for=w-or-v-val]").text("Velocity (m/s)");
+						$("#w-or-v-val").attr("min", 0.1).attr("max", 220).attr("step", 0.1).val(Math.round(10*speed*100*(radius/gridUnit))/10);
+					}
+					lastSpeedSetting = "V";
+				} else {
+					// angular speed
+					if (lastSpeedSetting == "W") {
+						speed = 2*Math.PI*$("#w-or-v-val").val()/100;
+					} else {
+						$("label[for=w-or-v-val]").text("Angular Speed (rev/s)");
+						$("#w-or-v-val").attr("min", 0.05).attr("max", 3).attr("step", 0.05).val(speed*100/(2*Math.PI));
+					}
+					lastSpeedSetting = "W";
+				}
 
 				// fill in measurements
 				document.getElementById("radius-val").innerHtml = ""+prettyNumber(radius/gridUnit)+" m";
