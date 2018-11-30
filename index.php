@@ -8,7 +8,7 @@
 		<script src="jquery.min.js"></script>
 		<script src="materialize.min.js" defer></script>
 		
-		<link href="materialize.min.css" rel="stylesheet"/>
+		<link href="materialize.min.css.php" rel="stylesheet"/>
 		<style type="text/css">
 			.no-margin {
 				margin: 0 !important;
