@@ -96,6 +96,18 @@
 						<p class="range-field">
 							<input type="range" id="mass" min="0.2" max="25" step="0.1" value="5" />
 						</p>
+						<div class="divider"></div>
+						<div class="code-block">
+							<p>Measurements:</p>
+							<p></p>
+							<p>Radius: <span id="radius-val"></span></p>
+							<p>Mass: <span id="mass-val"></span></p>
+							<p>Angluar speed: <span id="angular-speed-val"></span></p>
+							<p>Angluar speed: <span id="angular-speed-rps-val"></span></p>
+							<p>Velocity: <span id="velocity-val"></span></p>
+							<p>Centripetal acceleration: <span id="acceleration-val"></span></p>
+							<p>Centripetal force: <span id="force-val"></span></p>
+						</div>
 					</div>
 				</div>
 			</div>
