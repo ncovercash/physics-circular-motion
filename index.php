@@ -5,12 +5,10 @@
 			Circular Motion Project
 		</title>
 		
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js" defer></script>
-		<script src="//www.google.com/recaptcha/api.js" defer></script>
+		<script src="jquery.min.js"></script>
+		<script src="materialize.min.js" defer></script>
 		
-		<link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet"/>
-		<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+		<link href="materialize.min.css" rel="stylesheet"/>
 		<style type="text/css">
 			.no-margin {
 				margin: 0 !important;
