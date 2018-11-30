@@ -126,11 +126,11 @@
 							<p></p>
 							<p>Radius: <span id="radius-val"></span></p>
 							<p>Mass: <span id="mass-val"></span></p>
-							<p>Angluar speed: <span id="angular-speed-val"></span></p>
-							<p>Angluar speed: <span id="angular-speed-rps-val"></span></p>
+							<p>Angluar Speed: <span id="angular-speed-val"></span></p>
+							<p>Angluar Speed: <span id="angular-speed-rps-val"></span></p>
 							<p>Velocity: <span id="velocity-val"></span></p>
-							<p>Centripetal acceleration: <span id="acceleration-val"></span></p>
-							<p>Centripetal force: <span id="force-val"></span></p>
+							<p>Centripetal Acceleration: <span id="acceleration-val"></span></p>
+							<p>Centripetal Force: <span id="force-val"></span></p>
 						</div>
 					</div>
 				</div>
