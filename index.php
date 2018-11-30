@@ -51,6 +51,27 @@
 			input[type=range]::-ms-thumb {
 				background: #1b5e20;
 			}
+
+			.code-block {
+				font-family: monospace;
+				display: block;
+				padding: 10px;
+				margin: 10px;
+				background-color: #f9f9f9;
+			}
+
+			.code-block * {
+				font-family: monospace;
+			}
+
+			.code-block p {
+				padding: 0;
+				margin: 0;
+			}
+
+			.code-block p:empty {
+				height: 1.5em;
+			}
 		</style>
 	</head>
 	<body>
