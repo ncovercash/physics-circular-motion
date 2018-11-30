@@ -18,9 +18,13 @@
 				margin-bottom: 0 !important;
 			}
 
+			.no-top-margin {
+				margin-top: 0 !important;
+			}
+
 			a {
 				font-weight: bolder;
-				color: #1b5e20;
+				color: #303f9f;
 			}
 
 			a:hover {
@@ -37,19 +41,19 @@
 
 
 			input[type=range] + .thumb {
-				background-color: #1b5e20;
+				background-color: #303f9f;
 			}
 
 			input[type=range]::-webkit-slider-thumb {
-				background-color: #1b5e20;
+				background-color: #303f9f;
 			}
 
 			input[type=range]::-moz-range-thumb {
-				background: #1b5e20;
+				background: #303f9f;
 			}
 
 			input[type=range]::-ms-thumb {
-				background: #1b5e20;
+				background: #303f9f;
 			}
 
 			.code-block {
@@ -72,17 +76,25 @@
 			.code-block p:empty {
 				height: 1.5em;
 			}
+
+			.switch label input[type=checkbox]+.lever:after {
+				background-color: #303f9f !important;
+			}
+
+			.switch label input[type=checkbox]+.lever {
+				background-color: #9e9e9e !important;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="section">
-				<h2 class="header center">Circular Motion Project</h2>
-				<h5 class="header center">The Noahs</h5>
-				<h5 class="header center">Mr. Chintipalli's Physics Honors, Period 4</h5>
+				<h2 class="header center no-margin">Circular Motion Project</h2>
+				<h5 class="header center no-bottom-margin">The Noahs</h5>
+				<h5 class="header center no-top-margin">Mr. Chintipalli's Physics Honors, Period 4</h5>
 			</div>
 			<div class="divider"></div>
-			<div id="sec1" class="section">
+			<div class="section">
 				<div class="row">
 					<div class="col s12 m7 l8">
 						<canvas id="canvas" style="border: 1px solid black; border-radius: 0.4em;"></canvas>
